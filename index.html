@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/scripts.js" defer></script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
@@ -15,6 +15,38 @@
     <title>Calculadora | IMC</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div id="calc-container">
+            <h3>Calcule seu Índice de Massa Corporal</h3>
+            <form id="imc">
+                <div class="inputs">
+                    <div class="control">
+                        <input type="text" name="height" id="height" placeholder="Digite sua altura..." autocomplete="off">
+                    </div>
+                    <div class="control">
+                        <input type="text" name="weight" id="weight" placeholder="Digite seu peso..." autocomplete="off">
+                    </div>
+                </div>
+                <div class="control-btn">
+                    <button id="calc-btn">Calcular</button>
+                    <button id="calc-clear">Limpar</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="result-container">
+            <p id="result-imc">IMC: <span>12.2</span></p>
+            <p id="classification-imc">Classificação: <span>Normal</span></p>
+            <h3>Tabela de Classificações</h3>
+            <div id="table">
+                <div class="table-header">
+                    <h4>IMC</h4>
+                    <h4>Classificação</h4>
+                    <h4>Obesidade</h4>
+                </div>
+            </div>
+            <button id="back-btn">Voltar</button>
+        </div>
+    </div>
 </body>
 </html>
