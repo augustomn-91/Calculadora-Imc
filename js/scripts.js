@@ -53,6 +53,29 @@ const table_results = document.querySelector("#table");
 
 // funções
 
+function createTable(data) {
+    data.forEach(element => {
+        
+        const div = document.createElement("div");
+        div.classList.add("table-data");
+
+        const classification = document.createElement("h5");
+        classification.innerText = element.classificacao;
+        div.appendChild(classification);
+
+        const information = document.createElement("h5");
+        information.innerText = element.informacao;
+        div.appendChild(information);
+
+        const level = document.createElement("h5");
+        level.innerText = element.nivel;
+        div.appendChild(level);
+
+        table_results.appendChild(div);
+
+    });
+}
+
 // inicialização
 
 // eventos
