@@ -76,7 +76,18 @@ function createTable(data) {
     });
 }
 
+function clearInputs() {
+    height_input.value = "";
+    weight_input.value = "";
+}
+
 // inicialização
+
+createTable(data);
 
 // eventos
 
+clear_btn.addEventListener("click", (param) => {
+    param.preventDefault();
+    clearInputs();
+});
