@@ -106,4 +106,78 @@ body {
 
 #result-container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#result-imc {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+}
+
+#classification-imc {
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+}
+
+#result-container h3 {
+    margin-top: 0.8em;
+}
+
+#table {
+    margin: 1.2em 0;
+    background-color: #fcfcfc;
+    border-radius: 0.2em;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.19);
+}
+
+.table-header, .table-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+    border-bottom: 1px solid #cecece;
+    color: #575757;
+}
+
+.table-header h4, .table-data h5{
+    flex: 1;
+}
+
+#result-container #back-btn {
+    width: 50%;
+    align-self: center;
+    padding: 1.5em;
+    border-radius: 0.4em;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.4s;
+    opacity: 0.85;
+    background-color: #494949;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+#result-container #back-btn:hover {
+    opacity: 1;
+}
+
+.fine {
+    color: #12db34;
+}
+
+.low {
+    color: #dbce12;
+}
+
+.medium {
+    color: #db6212;
+}
+
+.bad {
+    color: #db1912;
 }
