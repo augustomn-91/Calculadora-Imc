@@ -1,4 +1,4 @@
-/* tabela de dados imc */
+// tabela de dados imc
 
 const data = [
     {
@@ -37,4 +37,23 @@ const data = [
         nivel: "III"
     },
 ];
+
+
+// elementos da tela inicial 
+
+const height_input = document.querySelector("#height");
+const weight_input = document.querySelector("#weight");
+const calc_btn = document.querySelector("#calc-btn");
+const clear_btn = document.querySelector("#clear-btn");
+
+// elementos tela de resultado
+
+const table_results = document.querySelector("#table");
+
+
+// funções
+
+// inicialização
+
+// eventos
 
