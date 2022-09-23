@@ -42,7 +42,6 @@ body {
 .control {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .control label {
@@ -127,17 +126,16 @@ body {
 #table {
     background-color: #353434;
     color: #cfcfcf;
-    min-width: 400px;
 }
 
 .table-header, .table-data {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.6em;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     border-bottom: 2px solid #201e1e;
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
 
 .table-header h5, .table-data p{
