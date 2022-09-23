@@ -114,49 +114,50 @@ body {
     font-size: 2em;
     font-weight: 600;
     margin-bottom: 0.3em;
+    color: #cfcfcf;
 }
 
 #classification-imc {
     font-size: 1em;
     font-weight: 600;
     margin-bottom: 2em;
+    color: #cfcfcf;
 }
 
 #table {
-    margin: 1.2em;
-    background-color: #fcfcfc;
-    border-radius: 0.2em;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 3px 6px rgba(0,0,0,0.19);
+    background-color: #353434;
+    color: #cfcfcf;
+    min-width: 400px;
 }
 
 .table-header, .table-data {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.5em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid #dfdfdf;
-    color: #747474;
+    margin-bottom: 0.6em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    border-bottom: 2px solid #201e1e;
+    font-size: 0.9em;
 }
 
-.table-header h4, .table-data h5{
+.table-header h5, .table-data p{
     flex: 1;
 }
 
 #back-btn {
-    width: 50%;
+    width: 13em;
     align-self: center;
-    padding: 1.5em;
-    border-radius: 0.4em;
+    padding: 1em;
     cursor: pointer;
     outline: none;
     border: none;
     transition: 0.4s;
-    opacity: 0.85;
-    background-color: #494949;
-    color: #ffffff;
-    font-size: 0.9em;
+    opacity: 0.6;
+    background-color: #0066ff;
+    color: #fff;
+    font-size: 1em;
     font-weight: 600;
+    margin-top: 2em;
 }
 
 #back-btn:hover {
@@ -164,7 +165,7 @@ body {
 }
 
 .fine {
-    color: #12db34;
+    color: #0ecf28;
 }
 
 .low {

@@ -4,28 +4,28 @@ const data = [
     {
         minimo: 0,
         maximo: 18.4,
-        classificacao: "Abaixo de 18,5",
+        classificacao: "Abaixo de 18.5",
         informacao: "Abaixo do peso",
         nivel: "0"
     },
     {
         minimo: 18.5,
         maximo: 24.9,
-        classificacao: "Entre 18,4 e 24,9",
+        classificacao: "Entre 18.4 e 24.9",
         informacao: "Normal",
         nivel: "0"
     },
     {
         minimo: 25,
         maximo: 29.9,
-        classificacao: "Entre 25 e 29,9",
+        classificacao: "Entre 25 e 29.9",
         informacao: "Sobrepeso",
         nivel: "I"
     },
     {
         minimo: 30,
         maximo: 39.9,
-        classificacao: "Entre 30 e 39,9",
+        classificacao: "Entre 30 e 39.9",
         informacao: "Obesidade",
         nivel: "II"
     },
@@ -63,15 +63,15 @@ function createTable(data) {
         const div = document.createElement("div");
         div.classList.add("table-data");
 
-        const classification = document.createElement("h5");
+        const classification = document.createElement("p");
         classification.innerText = element.classificacao;
         div.appendChild(classification);
 
-        const information = document.createElement("h5");
+        const information = document.createElement("p");
         information.innerText = element.informacao;
         div.appendChild(information);
 
-        const level = document.createElement("h5");
+        const level = document.createElement("p");
         level.innerText = element.nivel;
         div.appendChild(level);
 
