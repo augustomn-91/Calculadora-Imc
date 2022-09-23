@@ -127,6 +127,32 @@ calc_btn.addEventListener("click", function(e){
 
     hideScreen();
 
+    switch (information) {
+        case "Abaixo do peso":
+            result_imc.classList.add("low");
+            classification_imc.classList.add("low");
+            break;
+        case "Normal":
+            result_imc.classList.add("fine");
+            classification_imc.classList.add("fine");
+            break;
+        case "Sobrepeso":
+            result_imc.classList.add("low");
+            classification_imc.classList.add("low");
+            break;
+        case "Obesidade":
+            result_imc.classList.add("medium");
+            classification_imc.classList.add("medium");
+            break;
+        case "Obesidade grave":
+            result_imc.classList.add("bad");
+            classification_imc.classList.add("bad");
+            break;           
+            
+        default:
+            break;
+    }
+
 });
 
 [height_input, weight_input].forEach((ex) => {
