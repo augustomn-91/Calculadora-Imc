@@ -20,12 +20,19 @@ body {
 /* tela de inputs */
 
 .container {
-    min-height: 400px;
-    min-width: 400px;
+    height: 400px;
+    width: 400px;
     background-color: #201e1e;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     padding: 1.5em;
 }
+
+@media (max-width: 390px) {
+    .container {
+        height: 400px;
+        width: 350px;
+    }
+  }
 
 #calc-container h3{
     color: #cfcfcf;
