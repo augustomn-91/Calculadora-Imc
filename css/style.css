@@ -30,7 +30,7 @@ body {
 @media (max-width: 390px) {
     .container {
         height: 400px;
-        width: 350px;
+        width: 345px;
     }
   }
 
@@ -162,7 +162,7 @@ body {
     color: #fff;
     font-size: 1em;
     font-weight: 600;
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 
 #back-btn:hover {
